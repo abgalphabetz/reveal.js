@@ -20,12 +20,94 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<style>
+			span.buzzword { font-size: 200%; } 
+			.scala { color: red; }
+			.kotlin { color: blue; }
+			.python { color: orange; }
+			.tdd { color: green; }
+
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-markdown data-separator-vertical="^\n\n">
+					<textarea data-template>
+					# Agenda
+
+
+					- Demo
+					- Kotlin Language
+					- Q&A
+					</textarea>
+				</section>
+				<section data-markdown data-separator-vertical="^\n\n">
+					<textarea data-template>
+					# About Me
+
+
+					- a new (old) joiner since 16 Apr 2018
+					- windows id :  ayeung041618 (ayeung040711)
+
+
+					- <span class="buzzword">18+ years</span> dev exp on java/jvm platform
+					- a <span class="buzzword tdd">tdd/bdd</span>, agile, polyglot developer
+					- <span class="buzzword scala">scala</span>, <span class="buzzword kotlin">kotlin</span>, <span class="buzzword python">python</span>, js es6, devops
+
+
+					- <span class="buzzword">pair programming</span> over pr (if within same team)
+					- <span class="buzzword">gradle</span> over maven
+
+
+					- maintainer / creator of pbblotter / nightpricer / autopricer / ebiz / bookingservice / intrawarrant
+					- prc team working on exo pricing project
+					</textarea>
+				</section>
+				<section data-markdown data-separator-vertical="^\n\n">
+					<textarea data-template>
+					# Why
+
+
+					- for developers by developers
+					- make DX simple, easy and fun again
+					</textarea>
+				</section>
+				<section data-markdown data-separator-vertical="^\n\n">
+					<textarea data-template>
+					# Demo
+					</textarea>
+				</section>
+				<section data-markdown data-separator-vertical="^\n\n">
+					<textarea data-template>
+					# Experience
+
+
+					- a booking services gateway
+					- 100% kotlin in production 
+					- spring boot 2 + kotlin 1.2 + spring reactor
+					- some gotcha
+					</textarea>
+				</section>
+				<section data-markdown data-separator-vertical="^\n\n">
+					<textarea data-template>
+					# Takeaway
+
+
+					> be water, my friend  
+					> 	-- Bruce Lee
+
+
+					> be ~~water~~ ployglot, my friend  
+					>  	-- a poor developer 
+					</textarea>
+				</section>
+				<section data-markdown data-separator-vertical="^\n\n">
+					<textarea data-template>
+					# Q&A
+					</textarea>
+				</section>
 			</div>
 		</div>
 
@@ -37,6 +119,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				markdate: { smartypants: true},
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
